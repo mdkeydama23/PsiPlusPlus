@@ -12,18 +12,21 @@ A brief description of all the token types and rules implemented in the program 
 
 Maximum identifier size is 15 characters. If you use an identifier larger than that, the lexical analyzer issues an error message.
 Psi++ language is not case sensitive, and all the identifier names are standardized as lowercase.
-Identifiers start with an alphabetic character (a letter) and are composed of one or more letters, digits or _ (underscore).  
+Identifiers start with an alphabetic character (a letter) and are composed of one or more letters, digits or _ (underscore).
+
 Example Token: Identifier(my_var_5)
 
 ### Integer Constants
 
 Maximum integer size is 50 digits. If you use an integer value longer than that, the lexical analyzer issues an error message.
 Negative values are not supported.  
+
 Example Token: IntConst(2459)
 
 ### Operators
 
 Valid operators of the language are +, -, *, /, ++, --, :=.  
+
 Example Token: Operator (++)
 
 ### Brackets
@@ -31,6 +34,7 @@ Example Token: Operator (++)
 * LeftPar: (, RightPar: )
 * LeftSquareBracket: [, RightSquareBracket]
 * LeftCurlyBracket: {, RightCurlyBracket: }  
+
 Example Token: LeftCurlyBracket
 
 ### String Constants
@@ -44,11 +48,13 @@ If a string constant cannot terminate before the file end, there should be a lex
 
 Keywords are: break, case, char, const, continue, do, else, enum, float, for, goto, if, int, long, record, return, static, while
 Psi++ language is not case sensitive, and all the keywords are standardized as lower case. You can write the same word as “while” OR “While” OR “WHILE” and they all generate them…  
+
 Example Token: Keyword(while)
 
 ### End of Line
 
 Period “.” represents end of line in this language.  
+
 Example Token: EndOfLine
 
 ### Comments
