@@ -12,26 +12,26 @@ A brief description of all the token types and rules implemented in the program 
 
 Maximum identifier size is 15 characters. If you use an identifier larger than that, the lexical analyzer issues an error message.
 Psi++ language is not case sensitive, and all the identifier names are standardized as lowercase.
-Identifiers start with an alphabetic character (a letter) and are composed of one or more letters, digits or _ (underscore)
-Example Token: Identifier(my_var_5)
+Identifiers start with an alphabetic character (a letter) and are composed of one or more letters, digits or _ (underscore).
+ Example Token: Identifier(my_var_5)
 
 ### Integer Constants
 
 Maximum integer size is 50 digits. If you use an integer value longer than that, the lexical analyzer issues an error message.
 Negative values are not supported.
-Example Token: IntConst(2459)
+ Example Token: IntConst(2459)
 
 ### Operators
 
-Valid operators of the language are +, -, *, /, ++, --, :=
-Example Token: Operator (++)
+Valid operators of the language are +, -, *, /, ++, --, :=.
+ Example Token: Operator (++)
 
 ### Brackets
 
 * LeftPar: (, RightPar: )
 * LeftSquareBracket: [, RightSquareBracket]
 * LeftCurlyBracket: {, RightCurlyBracket: }
-* Example Token: LeftCurlyBracket
+ Example Token: LeftCurlyBracket
 
 ### String Constants
 
