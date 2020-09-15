@@ -28,10 +28,10 @@ Example Token: Operator (++)
 
 ### Brackets
 
-LeftPar: (, RightPar: )
-LeftSquareBracket: [, RightSquareBracket]
-LeftCurlyBracket: {, RightCurlyBracket: }
-Example Token: LeftCurlyBracket
+* LeftPar: (, RightPar: )
+* LeftSquareBracket: [, RightSquareBracket]
+* LeftCurlyBracket: {, RightCurlyBracket: }
+* Example Token: LeftCurlyBracket
 
 ### String Constants
 
