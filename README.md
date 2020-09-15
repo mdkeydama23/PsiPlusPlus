@@ -1,32 +1,35 @@
-# PsiPlusPlus
+# A lexical analyzer for the PsiPlusPlus language
 
-## A lexical analyzer for the PsiPlusPlus language
+## A Brief Introduction to the Program
 
-A Brief Introduction to the Program
 The Program should accept a source file called code.psi and produce a text file named as code.lex that contains all the tokens of the code.psi listed one after the other.
 
-Analysis Phase
-	A brief description of all the token types considered in the program and many rules are also included in the section below:
-Identifiers
+## Analysis Phase
+
+A brief description of all the token types considered in the program and many rules are also included in the section below:
+### Identifiers
+
  	Maximum identifiers size is 15 characters. If you use an identifier larger than that, the lexical analyzer issues an error message.
  	Psi++ language is not case sensitive, and all the identifier names are standardized as lowercase.
  	Identifiers start with an alphabetic character (a letter) and are composed of one or more letters, digits or _ (underscore)
  	Example Token: Identifier(my_var_5)
-Integer Constants
+### Integer Constants
+
  	Maximum integer size is 50 digits. If you use an integer value longer than that, the lexical analyzer issues an error message.
  	Negative values are not supported.
  	Example Token: IntConst(2459)
 
-Operators
+### Operators
+
  	Valid operators of the language are +, -, *, /, ++, --, :=
  	Example Token: Operator (++)
-Brackets
+### Brackets
  	LeftPar: ( RightPar: )
  	LeftSquareBracket: [ RightSquareBracket: ]
  	LeftCurlyBracket: { RightCurlyBracket: }
  	Example Token: LeftCurlyBracket
 
-String Constants
+### String Constants
  	String constants of Psi++ are delimited by double quotes (ASCII code 34) as in “this is a string”
  	String constants have unlimited size
  	String constants cannot contain the double quote character. when you reach one, the string terminates.
