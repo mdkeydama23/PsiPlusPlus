@@ -1,4 +1,4 @@
-# A lexical Analyzer For The PsiPlusPlus Language
+# A lexical Analyser For The PsiPlusPlus Language
 
 ## A Brief Introduction to the Program
 
